@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Apli-web-ASP.NET-Core-mvc_Repaso.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Apli-web-ASP.NET-Core-mvc_Repaso.props" />
+</Project>

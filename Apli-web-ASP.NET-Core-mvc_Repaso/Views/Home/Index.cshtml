@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row justify-content-center">
+    <div class="col-10">
+        <div class="alert alert-info" role="alert">
+            CRUD Empleados!
+        </div>
+        <button type="button" class="btn btn-success btn-sm buton-new-employee">Nuevo Empleado</button>
+        <table class="table table-striped" id="TableEmployee">
+            <thead>
+                <tr>
+                    <th>Nombre completo</th>
+                    <th>Departamento</th>
+                    <th>Sueldo</th>
+                    <th>Fecha Contrato</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="ModalEmployee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Empleados</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <label for="txtFullName" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="txtFullName" autocomplete="off">
+                </div>
+                <div class="mb-3">
+                    <label for="cboDeparment" class="form-label">Departamento</label>
+                    <select class="form-select" id="cboDeparment"></select>
+                </div>
+                <div class="mb-3">
+                    <label for="txtsalary" class="form-label">Sueldo</label>
+                    <input type="number" class="form-control" id="txtsalary">
+                </div>
+                <div class="mb-3">
+                    <label for="txtcontractDate" class="form-label">Fecha contrato</label>
+                    <input type="text" class="form-control" id="txtcontractDate">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary buton-save-change-employee">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/index.js"></script>
+}
+
+
+
